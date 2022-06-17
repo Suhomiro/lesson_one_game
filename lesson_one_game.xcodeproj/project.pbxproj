@@ -17,6 +17,8 @@
 		FE52398E2859FFD600C299E2 /* lesson_one_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52398D2859FFD600C299E2 /* lesson_one_gameTests.swift */; };
 		FE5239982859FFD600C299E2 /* lesson_one_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5239972859FFD600C299E2 /* lesson_one_gameUITests.swift */; };
 		FE52399A2859FFD600C299E2 /* lesson_one_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5239992859FFD600C299E2 /* lesson_one_gameUITestsLaunchTests.swift */; };
+		FECDD9DA285C935B00128CDF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECDD9D9285C935B00128CDF /* Card.swift */; };
+		FECDD9DC285C939000128CDF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECDD9DB285C939000128CDF /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FE5239932859FFD600C299E2 /* lesson_one_gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson_one_gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5239972859FFD600C299E2 /* lesson_one_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lesson_one_gameUITests.swift; sourceTree = "<group>"; };
 		FE5239992859FFD600C299E2 /* lesson_one_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lesson_one_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FECDD9D9285C935B00128CDF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FECDD9DB285C939000128CDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				FE5239812859FFD600C299E2 /* LaunchScreen.storyboard */,
 				FE5239842859FFD600C299E2 /* Info.plist */,
 				FE52397C2859FFD400C299E2 /* lesson_one_game.xcdatamodeld */,
+				FECDD9D9285C935B00128CDF /* Card.swift */,
+				FECDD9DB285C939000128CDF /* Game.swift */,
 			);
 			path = lesson_one_game;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5239782859FFD400C299E2 /* ViewController.swift in Sources */,
+				FECDD9DC285C939000128CDF /* Game.swift in Sources */,
 				FE5239742859FFD400C299E2 /* AppDelegate.swift in Sources */,
+				FECDD9DA285C935B00128CDF /* Card.swift in Sources */,
 				FE52397E2859FFD400C299E2 /* lesson_one_game.xcdatamodeld in Sources */,
 				FE5239762859FFD400C299E2 /* SceneDelegate.swift in Sources */,
 			);
