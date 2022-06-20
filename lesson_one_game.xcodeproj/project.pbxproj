@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE16B4CD2860701D00446F5E /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16B4CC2860701D00446F5E /* Emoji.swift */; };
+		FE16B4CF286071A700446F5E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16B4CE286071A700446F5E /* Colors.swift */; };
+		FE16B4D12860749E00446F5E /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16B4D02860749E00446F5E /* Count.swift */; };
 		FE5239742859FFD400C299E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5239732859FFD400C299E2 /* AppDelegate.swift */; };
 		FE5239762859FFD400C299E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5239752859FFD400C299E2 /* SceneDelegate.swift */; };
 		FE5239782859FFD400C299E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5239772859FFD400C299E2 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE16B4CC2860701D00446F5E /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		FE16B4CE286071A700446F5E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FE16B4D02860749E00446F5E /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		FE5239702859FFD400C299E2 /* lesson_one_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson_one_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5239732859FFD400C299E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5239752859FFD400C299E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE16B4D2286076B400446F5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE5239772859FFD400C299E2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE16B4D3286076D100446F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE16B4D52860770B00446F5E /* game_model */,
+				FE16B4D4286076E500446F5E /* ui_model */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE16B4D4286076E500446F5E /* ui_model */ = {
+			isa = PBXGroup;
+			children = (
+				FE16B4CC2860701D00446F5E /* Emoji.swift */,
+				FE16B4CE286071A700446F5E /* Colors.swift */,
+				FE16B4D02860749E00446F5E /* Count.swift */,
+			);
+			path = ui_model;
+			sourceTree = "<group>";
+		};
+		FE16B4D52860770B00446F5E /* game_model */ = {
+			isa = PBXGroup;
+			children = (
+				FECDD9D9285C935B00128CDF /* Card.swift */,
+				FECDD9DB285C939000128CDF /* Game.swift */,
+			);
+			path = game_model;
+			sourceTree = "<group>";
+		};
 		FE5239672859FFD400C299E2 = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +149,13 @@
 			children = (
 				FE5239732859FFD400C299E2 /* AppDelegate.swift */,
 				FE5239752859FFD400C299E2 /* SceneDelegate.swift */,
-				FE5239772859FFD400C299E2 /* ViewController.swift */,
+				FE16B4D2286076B400446F5E /* Controller */,
 				FE5239792859FFD400C299E2 /* Main.storyboard */,
 				FE52397F2859FFD600C299E2 /* Assets.xcassets */,
 				FE5239812859FFD600C299E2 /* LaunchScreen.storyboard */,
 				FE5239842859FFD600C299E2 /* Info.plist */,
 				FE52397C2859FFD400C299E2 /* lesson_one_game.xcdatamodeld */,
-				FECDD9D9285C935B00128CDF /* Card.swift */,
-				FECDD9DB285C939000128CDF /* Game.swift */,
+				FE16B4D3286076D100446F5E /* Model */,
 			);
 			path = lesson_one_game;
 			sourceTree = "<group>";
@@ -268,9 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5239782859FFD400C299E2 /* ViewController.swift in Sources */,
+				FE16B4CF286071A700446F5E /* Colors.swift in Sources */,
 				FECDD9DC285C939000128CDF /* Game.swift in Sources */,
 				FE5239742859FFD400C299E2 /* AppDelegate.swift in Sources */,
 				FECDD9DA285C935B00128CDF /* Card.swift in Sources */,
+				FE16B4D12860749E00446F5E /* Count.swift in Sources */,
+				FE16B4CD2860701D00446F5E /* Emoji.swift in Sources */,
 				FE52397E2859FFD400C299E2 /* lesson_one_game.xcdatamodeld in Sources */,
 				FE5239762859FFD400C299E2 /* SceneDelegate.swift in Sources */,
 			);
