@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Colors {
+struct Colors {
     
     let pinkColor = #colorLiteral(red: 1, green: 0.3017275698, blue: 0.7402455354, alpha: 1)
     let grayColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)

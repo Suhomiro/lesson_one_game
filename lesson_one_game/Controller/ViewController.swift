@@ -9,17 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var game = Game(numberOfPairsOfCards: (buttonCollection.count + 1) / 2)
-    lazy var colors = Colors()
-    lazy var emoji = Emoji()
+    private lazy var game = Game(numberOfPairsOfCards: numberOfPairsCard)
     
-    var touches = Count().touches {
+    var numberOfPairsCard: Int {
+        return (buttonCollection.count + 1) / 2
+    }
+    
+    private(set) lazy var colors = Colors()
+    private lazy var emoji = Emoji()
+    
+    private var touches = Count().touches {
         didSet{
             touchesLable.text = "Touches: \(touches)"
         }
     }
 
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for index in buttonCollection.indices {
             let button = buttonCollection[index]
             let card = game.cards[index]
@@ -33,9 +38,9 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var touchesLable: UILabel!
+    @IBOutlet private weak var touchesLable: UILabel!
     
-    @IBAction func buttonAction(_ sender: UIButton) {
+    @IBAction private func buttonAction(_ sender: UIButton) {
         touches += 1
         if let buttonIndex = buttonCollection.firstIndex(of: sender){
             game.choseCard(at: buttonIndex)
@@ -44,7 +49,8 @@ class ViewController: UIViewController {
     }
     
     
-    @IBOutlet var buttonCollection: [UIButton]!
+    @IBOutlet private var buttonCollection: [UIButton]!
     
- }
+}
+
 

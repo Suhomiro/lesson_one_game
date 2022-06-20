@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Count {
+struct Count {
     var touches = 0
 }
